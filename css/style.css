@@ -1,0 +1,26 @@
+body {
+	margin:20px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+#feed {
+	margin:0;
+	padding:0;
+}
+
+.date { 
+	color:#666;
+}
+
+img {
+  opacity: 0.4;
+  padding: 7px; 
+}
+img:hover {
+	opacity: 1;
+	height: 200px;
+	width:200px;
+}
