@@ -2,7 +2,7 @@
 
 ## Description
 
-Use the Food2Fork API to find recipes and display them in a grid
+Use the Yummly API to find recipes and display them in a grid. A simple practice app to work on JS.
 
 ## Design
 
