@@ -18,6 +18,8 @@ h1 {
 img {
   opacity: 0.4;
   padding: 7px; 
+  width:180px;
+  height: 180px;
 }
 img:hover {
 	opacity: 1;
