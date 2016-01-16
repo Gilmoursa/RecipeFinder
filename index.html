@@ -2,29 +2,140 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Recipe Finder</title>
+	<title>A Plus</title>
 	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
 </head>
 <body>
-	<div class="panel panel-default">
-	  <div class="panel-body">	
-		<h1>Recipe Finder</h1>
-		<p>powered by <a href="https://developer.yummly.com/">Yummly API</a></p>
-		
-		<input type="text" id="keyword">&nbsp;
-		<button type="button" id="search">Find a recipe</button>
-		<hr>
-		
-		<!-- display feed -->
-		<h2>Search Results</h2>
-		<div id="feed"></div>
-	  </div>
+<!-- Header -->
+	<div class="header">
+		<div class = "header-text">
+			<div class="row pad30">
+				<h1><a href="http://aplus.com/">❰+ A PLUS</a></h1>
+			</div>
+			<br><br>
+			<div class="row pad30">
+				<h1>Trending News Stories</h1>
+			</div>
+		</div>
 	</div>
-			
+<!-- NavBar -->
+	<div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+                <li><a href="http://aplus.com/c/awareness">Awareness</a> </li>
+                <li><a href="http://aplus.com/c/discover">Discover</a> </li>
+                <li class="divider"></li>
+                <li><a href="http://aplus.com/c/video">Video</a> </li>
+                <li><a href="http://aplus.com/c/culture">Culture</a> </li>
+                <li class="divider"></li>
+                <li><a href="http://aplus.com/c/discover">News</a></li>
+                <li><a href="http://aplus.com/c/discover">Act</a> </li>
+                <li><a href="http://aplus.com/c/more">More</a></li>
+                <li class="dropdown">
+<!-- More Drop Down -->
+              <a class="dropdown-toggle" data-toggle="dropdown"  id="articles">More <span class="caret"></span></a>
+              <ul class="dropdown-menu" aria-labelledby="articles">
+                <li><a href="http://aplus.com/c/adventure">Adventure</a></li>
+                <li><a href="http://aplus.com/c/animals">Animals</a></li>
+                <li><a href="http://aplus.com/c/change">Change</a></li>
+                <li><a href="http://aplus.com/c/connect">Connect</a></li>
+                <li><a href="http://aplus.com/c/earth">Earth</a></li>
+                <li><a href="http://aplus.com/c/enterprise">Enterprise</a></li>
+                <li><a href="http://aplus.com/c/entertainment">Entertainment</a></li>
+                <li><a href="http://aplus.com/c/family">Family</a></li>
+                <li><a href="http://aplus.com/c/fashion">Fashion</a></li>
+                <li><a href="http://aplus.com/c/grow">Grow</a></li>
+                <li><a href="http://aplus.com/c/humor">Humor</a></li>
+                <li><a href="http://aplus.com/c/lifestyle">Lifestyle</a></li>
+                <li><a href="http://aplus.com/c/opinion">Opinion</a></li>
+                <li><a href="http://aplus.com/c/relationships">Relationships</a></li>
+                <li><a href="http://aplus.com/c/science">Science</a></li>
+                <li><a href="http://aplus.com/c/sports">Sports</a></li>
+                <li><a href="http://aplus.com/c/tech">Tech</a></li>
+                <li><a href="http://aplus.com/c/wellness">Wellness</a></li>
+                <li><a href="http://aplus.com/c/video">Video</a></li>
+              </ul>
+            </li>
+          </ul>
+<!-- Social Icons -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://facebook.com/aplusapp"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/aplusapp"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://pinterest.com/aplusapp"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="https://youtube.com/aplusapp"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="http://aplusapp.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+<!-- Sponsored Story -->
+    	<h1>LATEST STORIES</h1>
+    	<br><br>
+    	<div id="sponsored">
+    		
+    	</div>
+<!-- Article Roll -->
+		<div id="feed"></div>
+
+		<button id="loader" class="btn btn-default">LOAD MORE</button>
+	</div>
+<!-- Subscribe -->
+<div class="yellowbar">
+	<div class="subscribe">
+		<h1>SIGN UP FOR THE A PLUS NEWSLETTER</h1>	
+		<h4>Full of more positive content that you'll love</h4>
+		<div class='form'>
+			<input class="form-control" id="email" name="email" placeholder="enter your email" required="required" type="email" value>
+			<button id="subscribe" type="btn btn-default">SUBSCRIBE</button>
+		</div>
+	</div>
+	<div class='confirmation' style="display:none">
+		<p>Thank you for subscribing!</p>
+	</div>
+</div>
+<!-- Footer -->
+<footer id="footer">
+            <div class="footer">
+               <div class="container">
+                  <div class="row">
+                     <section class="col-lg-4 col-md-4 col-xs-12 col-sm-4 footer-one">
+                        <h3>❰+ A Plus</h3>
+                        <h4>Positive Journalism</h4>
+                        <p> 
+                           A Plus is a technology-based digital media company focused on delivering positive journalism and being the voice of good in the world.
+                        </p>
+                     </section>
+                     <section class="col-lg-4 col-md-4 col-xs-12 col-sm-4 footer-two">
+                     	<p></p>
+		                <p><a href="http://aplus.com/c/awareness">Awareness</a> </p>
+		                <p><a href="http://aplus.com/c/discover">Discover</a> </p>
+		                <p><a href="http://aplus.com/c/video">Video</a> </p>
+		                <p><a href="http://aplus.com/c/culture">Culture</a> </p>
+		                <p><a href="http://aplus.com/c/discover">News</a></p>
+		                <p><a href="http://aplus.com/c/discover">Act</a> </p>
+                     </section>
+                     <section class="col-lg-4 col-md-4 col-xs-12 col-sm-4 footer-three">
+                     	<p></p>
+			            <p><a href="https://facebook.com/aplusapp"><i class="fa fa-facebook"></i></a></p>
+			            <p><a href="https://twitter.com/aplusapp"><i class="fa fa-twitter"></i></a></p>
+			            <p><a href="https://pinterest.com/aplusapp"><i class="fa fa-pinterest"></i></a></p>
+			            <p><a href="https://youtube.com/aplusapp"><i class="fa fa-youtube"></i></a></p>
+			            <p><a href="http://aplusapp.tumblr.com/"><i class="fa fa-tumblr"></i></a></p>
+                     </section>
+                  </div>
+               </div>
+            </div>
+</footer>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/yummlySearch.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/articleroll.js"></script>
+	<script type="text/javascript" src="js/subscribe.js"></script>
+
 </body>
 </html>
